@@ -1,16 +1,12 @@
 import "./App.css";
-import Fundo from "./Components/Fundo/Fundo";
-import FormLogin from "./Components/FormLogin/FormLogin";
+import AppRoutes from "./Components/Rotas/AppRoutes";
+
 
 
 function App() {
   return (
     <div className="app">
-      <div>
-        
-        <Fundo titulo="NOME FLASH CARDS" texto="Desbloqueie o conhecimento com nossos flash cards inteligentes."/>
-        <FormLogin/>
-      </div>
+      <AppRoutes />
     </div>
   );
 }

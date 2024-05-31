@@ -1,19 +1,18 @@
 .topSection {
 
+    position: relative;
+    /* Adiciona position relative */
     width: 100%;
     height: 125vh;
     background: #81DAD0;
-    border-bottom-left-radius: 50% 20%; /* Ajuste o segundo valor conforme necessário */
-    border-bottom-right-radius: 50% 20%; /* Ajuste o segundo valor conforme necessário */
-
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+    overflow: hidden;
+    /* Para garantir que o conteúdo não ultrapasse a topSection */
 }
 
-.topSection1 {
-
-    width: 100%;
-    height: 100vh;
-    background: black;
-
+.container-top {
+    display: flex;
 }
 
 .nav-link {
@@ -37,6 +36,16 @@
     align-items: flex-start;
     justify-content: center;
     padding: 20px;
+}
+
+.wrap2-container-top {
+    width: 50%;
+    height: 109vh;
+    display: flex;
+    position: absolute;
+    right: 0;
+
+
 }
 
 .title-container-top {
@@ -77,5 +86,81 @@
 
     color: #FFFFFF;
 
+
+}
+
+.wrap2-container-top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.topSection1 {
+
+    width: 100%;
+    height: 125vh;
+    background-color: aqua;
+
+}
+
+.topSection1 header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.container-top1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.highlight-container-top1 {
+
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 100%;
+
+
+    /* Accent gradient */
+    background: linear-gradient(90deg, #136CB5 0%, #49BBBD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.text-container-top1 {
+
+    text-align: center;
+    padding: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 130%;
+    /* identical to box height, or 42px */
+
+    /* Half dark text color */
+    color: rgba(1, 5, 20, 0.8);
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
 
 }

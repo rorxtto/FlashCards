@@ -1,5 +1,6 @@
 import "./LandingPage.css";
 import Botao from "../Botao/Botao";
+import Medico from "../../img/medico.png";
 
 const LandingPage = () => {
   const estiloBotao = {
@@ -51,20 +52,19 @@ const LandingPage = () => {
     background: "#C7F2ED",
     borderRadius: "30px",
     border: "none",
-    fontFamily: 'Poppins',
-    fontStyle: 'normal',
+    fontFamily: "Poppins",
+    fontStyle: "normal",
     fontWeight: 400,
-    fontSize: '14px',
-    lineHeight: '21px',
-    color: '#03451E',
-    flex: 'none',
+    fontSize: "14px",
+    lineHeight: "21px",
+    color: "#03451E",
+    flex: "none",
     order: 0,
     flexGrow: 0,
-  }
+  };
 
   return (
     <div>
-
       <section className="topSection">
         <header>
           <nav
@@ -82,7 +82,7 @@ const LandingPage = () => {
                     lineHeight: "48px",
                     letterSpacing: "0.04em",
                     color: "#FFFFFF",
-                    padding:"20px"
+                    padding: "20px",
                   }}
                 >
                   Logo FlashCards
@@ -119,30 +119,87 @@ const LandingPage = () => {
           </nav>
         </header>
 
-        <div className="container-top" >
-          <div className="wrap-container-top" >
-            <h1 className="title-container-top"><span className="highlight-container-top">Sua aprovação</span> agora é muito mais fácil</h1>
-            <p className="text-container-top">Preparação Dinâmica, Avaliação Interativa: Sua Jornada para o Revalida!</p>
-            <Botao botao="Acessar" estilo={estiloBotao2}/>
+        <div className="container-top">
+          <div className="wrap-container-top">
+            <h1 className="title-container-top">
+              <span className="highlight-container-top">Sua aprovação</span>{" "}
+              agora é muito mais fácil
+            </h1>
+            <p className="text-container-top">
+              Preparação Dinâmica, Avaliação Interativa: Sua Jornada para o
+              Revalida!
+            </p>
+            <Botao botao="Acessar" estilo={estiloBotao2} />
+          </div>
+          <div className="wrap2-container-top">
+            <img src={Medico} alt="Medico" title="Medico"></img>
           </div>
         </div>
       </section>
 
+      <section className="topSection1">
+        <header>
+          <h1
+            style={{
+              fontFamily: "Poppins",
+              fontStyle: "normal",
+              fontWeight: 900,
+              fontSize: "48px",
+              lineHeight: "130%",
+              textAlign: "center",
+            }}
+          >
+            Sobre Nós
+          </h1>
+          <p
+            style={{
+              fontFamily: "Poppins",
+              fontStyle: "normal",
+              fontWeight: 275,
+              fontSize: "18px",
+              lineHeight: "160%",
+              textAlign: "center",
+              color: "rgba(1, 5, 20, 0.8)",
+            }}
+          >
+            Somos uma plataforma dedicada ao sucesso dos estudantes no Revalida,
+            o exame necessário para validar diplomas de medicina no Brasil.
+            Nosso foco está em fornecer uma abordagem eficaz de estudo através
+            de flashcards cuidadosamente elaborados. Acreditamos que a prática
+            regular com perguntas e respostas concisas é fundamental para a
+            preparação dos candidatos, permitindo uma revisão eficiente e
+            aprofundada dos conceitos essenciais. Nosso compromisso é oferecer
+            uma ferramenta robusta e intuitiva que ajude os estudantes a
+            alcançarem seus objetivos de aprovação no Revalida.
+          </p>
+        </header>
 
+        <div className="container-top1">
+          <p className="text-container-top1">
+            <span className="highlight-container-top1">25K+</span>
+            <br></br>Estudantes
+          </p>
 
+          <p className="text-container-top1">
+            <span className="highlight-container-top1">10K+</span>
+            <br></br>Questões
+          </p>
 
+          <p className="text-container-top1">
+            <span className="highlight-container-top1">95%</span>
+            <br></br>Redução no tempo<br></br> de estudo
+          </p>
 
-
-
-
-
-
-
-
-
-
-
-      <section className="topSection1"></section>
+          <p className="text-container-top1">
+            <span className="highlight-container-top1">75</span>
+            <br></br>Matérias<br></br> Disponiveis
+          </p>
+          <p className="text-container-top1">
+            <span className="highlight-container-top1">99%</span>
+            <br></br>Taxa de recomendação<br></br> dos usuários
+          </p>
+        </div>
+      </section>
     </div>
   );
 };

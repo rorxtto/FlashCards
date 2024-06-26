@@ -107,11 +107,11 @@ const FormLogin = () => {
 
                     {/* paragrafo e link para forgot password */}
                     <div style={{ padding: '0' }} className="mb-3 form-check">
-                        <p className="question"> Esqueceu sua senha? <a className="link" href="#!">Clique aqui</a> </p>
+                        <p className="question"> Esqueceu sua senha? <a className="link" href="https://hotmart.com/pt-br">Clique aqui</a> </p>
                     </div>
 
                     {/* botao acessar */}
-                    <Botao botao='Acessar' estilo={estiloBotao} />
+                    <Botao botao='Acessar' estilo={estiloBotao} rota="/materias" />
 
                 </form>
 

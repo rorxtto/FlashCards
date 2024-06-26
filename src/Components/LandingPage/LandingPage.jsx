@@ -1,6 +1,5 @@
 import "./LandingPage.css";
 import Botao from "../Botao/Botao";
-import Medico from "../../img/medico.png";
 import check from "../../img/check.svg";
 import checkCinza from "../../img/checkCinza.svg";
 import checkAzul from "../../img/checkAzul.svg";
@@ -60,7 +59,8 @@ const LandingPage = () => {
       <section id="topSection" className="topSection">
         <header>
           <nav
-            style={{ backgroundColor: "#81DAD0" }}
+            style={{ backgroundColor: "#81DAD0"
+            }}
             className="navbar navbar-expand-lg"
           >
             <div className="container-fluid d-flex justify-content-between">
@@ -75,6 +75,7 @@ const LandingPage = () => {
                     letterSpacing: "0.04em",
                     color: "#FFFFFF",
                     paddingLeft: "3rem",
+                    
                   }}
                 >
                   Logo FlashCards
@@ -165,14 +166,11 @@ const LandingPage = () => {
             <Botao botao="Acessar" estilo={estiloBotao2} rota="/" />
           </div>
 
-          <div className="wrap2-container-top">
-            <img src={Medico} alt="Medico" title="Medico"></img>
-          </div>
         </div>
       </section>
 
       <section id="topSection1" className="topSection1">
-        <header>
+        <header >
           <h1
             style={{
               fontFamily: "Poppins",
